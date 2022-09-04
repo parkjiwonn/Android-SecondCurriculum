@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teamnova">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeamNova">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBBtHI1INMAF7fwKDso3hHPNxnAcgnetv0" />
+
+        <activity
+            android:name=".map"
+            android:exported="false" />
+        <activity
+            android:name=".DiaryView_Activity"
+            android:exported="false" />
+        <activity android:name=".InternetWebView"
+            android:exported="false"/>
+        <activity
+            android:name=".TripAd_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditTravelDiary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditDiary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDiary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTravelDiary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelDiary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Diary_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Start_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
